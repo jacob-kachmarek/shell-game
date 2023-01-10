@@ -36,6 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-image: url(../assets/Ocean.jpg);
 }
 
 section {
@@ -45,15 +46,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
 }
 
 .header {
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 .hiding-img {
@@ -79,9 +77,39 @@ section {
     flex-direction: column;
 }
 
-.face::after {
+#shell-button-2 {
+    margin-left: 125px;
+}
+
+#shell-button-3 {
+    margin-left: 125px;
+}
+
+#ball-2 {
     display: flex;
-    content: url(../assets/thief.png);
-    size: 30px;
+    margin-left: 140px;
+    margin-bottom: 300px;
+    top: 345px;
+}
+
+#ball-3 {
+    display: flex;
+    margin-left: 140px;
+    top: 345px;
+}
+
+.ball {
+    display: flex;
     position: absolute;
+    content: url(../assets/Ball.png);
+    height: 30px;
+    visibility: hidden;
+}
+
+.ball::after {
+    display: flex;
+    position: absolute;
+    content: url(../assets/Ball.png);
+    height: 30px;
+    visibility: visible;
 }

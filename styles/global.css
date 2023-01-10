@@ -78,3 +78,10 @@ section {
     align-items: center;
     flex-direction: column;
 }
+
+.face::after {
+    display: flex;
+    content: url(../assets/thief.png);
+    size: 30px;
+    position: absolute;
+}

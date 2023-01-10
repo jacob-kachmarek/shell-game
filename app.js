@@ -20,14 +20,26 @@ let totalGuesses = 0;
 /* State */
 
 /* Events */
-shell1Btn.addEventListener('click', () => {});
+shell1Btn.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    getRandomHidingSpot();
+    handleGuess('first-shell', correctSpot);
+});
 
-shell2Btn.addEventListener('click', () => {});
+shell2Btn.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    getRandomHidingSpot();
+    handleGuess('second-shell', correctSpot);
+});
 
-shell3Btn.addEventListener('click', () => {});
+shell3Btn.addEventListener('click', () => {
+    const correctSpot = getRandomHidingSpot();
+    getRandomHidingSpot();
+    handleGuess('third-shell', correctSpot);
+});
 /* Display Functions */
 function getRandomHidingSpot() {
-    const hidingPlaces = ['shell1', 'shell2', 'shell3'];
+    const hidingPlaces = ['first-shell', 'second-shell', 'third-shell'];
     const index = Math.floor(Math.random() * hidingPlaces.length);
     const correctSpot = hidingPlaces[index];
     return correctSpot;

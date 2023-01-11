@@ -13,10 +13,6 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const totalEl = document.getElementById('total');
 
-const ball1 = document.getElementById('ball-1');
-const ball2 = document.getElementById('ball-2');
-const ball3 = document.getElementById('ball-3');
-
 let correctGuesses = 0;
 let incorrectGuesses = 0;
 let totalGuesses = 0;

@@ -46,6 +46,7 @@ function getRandomHidingSpot() {
     const hidingPlaces = ['first-shell', 'second-shell', 'third-shell'];
     const index = Math.floor(Math.random() * hidingPlaces.length);
     const correctSpot = hidingPlaces[index];
+
     return correctSpot;
 }
 
@@ -62,7 +63,8 @@ function handleGuess(userGuess, correctSpot) {
     lossesEl.textContent = incorrectGuesses;
     totalEl.textContent = totalGuesses;
 
-    const correctCont = document.getElementById(`${correctSpot}-shell`);
+    const correctCont = document.getElementById(`${correctSpot}`);
+
     correctCont.classList.add('ball');
 }
 

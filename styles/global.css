@@ -37,6 +37,7 @@ main {
     align-items: center;
     padding: 20px;
     background-image: url(../assets/Ocean.jpg);
+    background-repeat: no-repeat;
 }
 
 section {
@@ -59,12 +60,10 @@ section {
     height: 200px;
     justify-content: center;
     align-items: center;
-    margin: 10px;
 }
 
 .hiding-places {
     display: flex;
-    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -77,39 +76,8 @@ section {
     flex-direction: column;
 }
 
-#shell-button-2 {
-    margin-left: 125px;
-}
-
-#shell-button-3 {
-    margin-left: 125px;
-}
-
-#ball-2 {
-    display: flex;
-    margin-left: 140px;
-    margin-bottom: 300px;
-    top: 345px;
-}
-
-#ball-3 {
-    display: flex;
-    margin-left: 140px;
-    top: 345px;
-}
-
-.ball {
-    display: flex;
-    position: absolute;
-    content: url(../assets/Ball.png);
-    height: 30px;
-    visibility: hidden;
-}
-
 .ball::after {
     display: flex;
     position: absolute;
-    content: url(../assets/Ball.png);
-    height: 30px;
-    visibility: visible;
+    content: '⚪';
 }

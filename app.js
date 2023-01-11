@@ -8,6 +8,7 @@ const shell3Cont = document.getElementById('third-shell');
 const shell1Btn = document.getElementById('shell-button-1');
 const shell2Btn = document.getElementById('shell-button-2');
 const shell3Btn = document.getElementById('shell-button-3');
+const resetBtn = document.getElementById('reset-button');
 
 const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
@@ -36,6 +37,13 @@ shell3Btn.addEventListener('click', () => {
     const correctSpot = getRandomHidingSpot();
     getRandomHidingSpot();
     handleGuess('third-shell', correctSpot);
+});
+
+resetBtn.addEventListener('click', () => {
+    removeClasses();
+    winsEl.textContent = 0;
+    lossesEl.textContent = 0;
+    totalEl.textContent = 0;
 });
 /* Display Functions */
 function getRandomHidingSpot() {
